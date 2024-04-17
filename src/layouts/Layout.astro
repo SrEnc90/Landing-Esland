@@ -1,0 +1,52 @@
+---
+// Hemos descargado el package de font family de onest
+// Supports weights 100-900
+import '@fontsource-variable/onest';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title } = Astro.props;
+const { description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<!-- <meta name="generator" content={Astro.generator} /> -->
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		color-scheme: dark;
+	}
+	html {
+		font-family: 'Onest Variable', system-ui, sans-serif;
+		background: #151a36;
+	}
+	
+	p {
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 1.4;
+		margin-bottom: 1em;
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: .5px;
+	}
+
+	p b {
+		color: white;
+		font-weight: 700;
+
+	}
+</style>
