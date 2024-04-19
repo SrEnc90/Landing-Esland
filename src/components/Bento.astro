@@ -16,11 +16,46 @@ import BentoItem from "./BentoItem.astro";
         >
             <div
                 slot="image" 
-                class="absolute top-0 left-0 right-0 object-cover object-center"
-                style="background-image: url('./mountain.webp')"
-            >
+                class="
+                absolute top-0 left-0 bottom-0 object-cover object-center
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity z-0>
+                "
+                style="background-image: url('/mountain.webp');"
+            ></div>
+            
+            <p slot="content" class="max-w-xl">
+               Una nueva edición <strong>cargada de novedades</strong> y contenido, que empezará varias semanas antes de la ansiada gala.<strong>Directos especiales, colaboraciones, conciertos y mucho más</strong> eb lo que será una auténtica fiesta dedicada a la creación de contenido.
+            </p>
+        </BentoItem>
+        <BentoItem class="col-span-10 md:col-span-6" title="LA ALFOMBRA BLANCA Y LA GALA" subtitle="16 de febrero de 2024">
 
-            </div>
+            <div
+                slot="image" 
+                class="
+                absolute top-0 left-0 bottom-0 object-cover object-center
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-900 bg-blend-luminosity z-0>
+                "
+                style="background-image: url('/grefg.webp');"
+            ></div>
+
+            <p slot="content" class="max-w-xl">
+                Una gala de premios llena de <strong>de primer nivels</strong> y <strong>muchas sorpresas</strong>, en la que se descubrirán los ganadores de esta tercera edición de los premios ESLAND.
+            </p>
+        </BentoItem>
+        <BentoItem class="col-span-10 md:col-span-6" title="LA GALA" subtitle="17 de febrero de 2024">
+
+            <div
+                slot="image" 
+                class="
+                absolute top-0 left-0 bottom-0 object-cover object-center
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-900 bg-blend-luminosity z-0>
+                "
+                style="background-image: url('/pistas.webp');"
+            ></div>
+
             <p slot="content" class="max-w-xl">
                 Este año, el momento de la alfombra azul será sustituido y mejorado,
                 gracias a los increíbles paisajes andorranos, por una <strong>alfombra
@@ -29,8 +64,21 @@ import BentoItem from "./BentoItem.astro";
                 </strong>
             </p>
         </BentoItem>
-        <BentoItem class="col-span-10 md:col-span-6" title="LA ALFOMBRA BLANCA Y LA GALA" subtitle="16 de febrero de 2024"></BentoItem>
-        <BentoItem class="col-span-10 md:col-span-6" title="LA GALA" subtitle="17 de febrero de 2024"></BentoItem>
-        <BentoItem class="col-span-10 md:col-span-4" title="DISFRUTA DEL REDDIT DE LA COMUNIDAD"></BentoItem>
+        <BentoItem class="col-span-10 md:col-span-4" title="DISFRUTA DEL REDDIT DE LA COMUNIDAD">
+
+            <div
+                slot="image" 
+                class="
+                absolute top-0 left-0 bottom-0 object-cover object-center
+                h-full group-hover:scale-110 transition-scale duration-1000
+                ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-blue-950 bg-blend-luminosity z-0>
+                "
+                style="background-image: url('/laptop.webp');"
+            ></div>
+
+            <p slot="content" class="max-w-xl">
+                Este año, el reddit no formará parte de las votaciones de los premios, pero sí que <strong>formará parte de la comunidad</strong>. el subreddit oficial de los Premios ESLAND está abierto para ti, para que compartas tus clips, tus opiniones y para que <strong>interactúes con toda la comunidad</strong> del streaming hispanohablante.
+            </p>
+        </BentoItem>
 
 </section>
